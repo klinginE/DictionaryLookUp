@@ -84,7 +84,7 @@ public class lookUpMain {
 					wordFound = true;
 					System.out.println(line);
 					while((line = br.readLine()) != null) {
-						if (line.matches("([A-Z])*") && !line.equals(word) && !line.equals(""))
+						if (line.matches("([A-Z])+") && !line.equals(word) && !line.equals(""))
 							break;
 						System.out.println(line);
 					}
@@ -94,7 +94,7 @@ public class lookUpMain {
 
 			}
 			if (!wordFound)
-				System.out.println("Word not found. Perhaps you misspelled it.");
+				System.out.println(word + " not found. Perhaps you misspelled it.");
 
 		}
 		catch (IOException e) {
