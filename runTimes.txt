@@ -1,0 +1,11 @@
+Index: 0	Time: 341
+Index: 1	Time: 222
+Index: 2	Time: 186
+Index: 3	Time: 173
+Index: 4	Time: 164
+Index: 5	Time: 154
+Index: 6	Time: 153
+Index: 7	Time: 152
+Index: 8	Time: 161
+Index: 9	Time: 159
+Avage: 186

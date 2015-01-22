@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 
 public class lookUpMain {
 
@@ -33,8 +34,20 @@ public class lookUpMain {
 
 		if (dictFile.exists() && !dictFile.isDirectory() && dictFile.isFile() && dictFile.canRead()) {
 
-			String word = getWord();
-			processWord(dictFile, word);
+//			ArrayList<Long> exicutionTimes = new ArrayList<Long>();
+//			long total = 0l;
+
+//			for (int i = 0; i < 10; i++) {
+
+				String word = getWord();
+//				long startTime = System.currentTimeMillis();
+				processWord(dictFile, word);
+//				exicutionTimes.add(new Long(System.currentTimeMillis() - startTime));
+//				total += exicutionTimes.get(i).longValue();
+//				System.out.println("Index: " + i + "\tTime: " + exicutionTimes.get(i).longValue());
+
+//			}
+//			System.out.println("Avage: " + (total / exicutionTimes.size()));
 
 		}
 		else {
